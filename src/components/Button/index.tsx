@@ -11,7 +11,7 @@ export type ButtonProps<T extends React.ElementType> = {
   startIcon?: React.ReactElement | string
   endIcon?: React.ReactElement | string
   disabled?: boolean
-  styleConfig: CSSProperties
+  styleConfig?: CSSProperties
   renderAs?: T | 'div'
 } & React.ComponentPropsWithoutRef<T>
 
