@@ -3,30 +3,36 @@ import { Button } from '.'
 import * as React from 'react'
 
 export default {
-  title: 'Button',
+  title: 'All Buttons',
   component: Button,
 } as ComponentMeta<typeof Button>
 
 const Template: ComponentStory<typeof Button> = (args) => (
-  <Button {...args}>Button Component</Button>
+  <Button {...args}>Button</Button>
 )
 
-export const Primary = Template.bind({})
-Template.args = {
+export const PrimaryButton = Template.bind({})
+PrimaryButton.args = {
   variant: 'primary',
 }
 
-export const Danger = Template.bind({})
-Danger.args = {
+export const DangerButton = Template.bind({})
+DangerButton.args = {
   variant: 'danger',
 }
 
-export const Warning = Template.bind({})
-Warning.args = {
+export const WarningButton = Template.bind({})
+WarningButton.args = {
   variant: 'warning',
 }
 
-export const Success = Template.bind({})
-Success.args = {
+export const SuccessButton = Template.bind({})
+SuccessButton.args = {
   variant: 'success',
+}
+
+export const SmallButton = Template.bind({})
+SmallButton.args = {
+  variant: 'primary',
+  size: 'small',
 }
