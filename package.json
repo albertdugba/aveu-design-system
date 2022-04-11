@@ -23,7 +23,7 @@
   "scripts": {
     "start": "react-scripts start",
     "format": "prettier --write .",
-    "lint":"eslint --fix",
+    "lint": "eslint --fix",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -74,7 +74,6 @@
     "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
-    "babel-plugin-superjson-next": "^0.4.2",
     "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.2",
     "eslint-config-prettier": "^8.3.0",
