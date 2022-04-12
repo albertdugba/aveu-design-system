@@ -9,7 +9,7 @@ jobs:
               with:
                   node-version: ubuntu-latest
             - name: tsc
-              run: yarn tsc
+              run: yarn tsc --noEmit
             - name: run prettier
               run: yarn --prettier --write .
             - name: run eslint
