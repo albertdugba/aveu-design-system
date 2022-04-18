@@ -3,7 +3,7 @@ import { StyledInput, StyledInputContainer, StyledLabel } from './styled'
 
 export type TextFieldProps<T extends ElementType> = {
   label: string
-  variant: 'default' | 'outlined'
+  variant?: 'default' | 'outlined'
   validationError?: boolean
 } & ComponentPropsWithoutRef<T>
 
@@ -19,6 +19,7 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps<'input'>>(
           {label}
         </StyledLabel>
         <StyledInput
+          data-testid="input-field"
           label={label}
           variant={variant}
           validationError={validationError}
@@ -31,3 +32,6 @@ export const TextField = forwardRef<HTMLInputElement, TextFieldProps<'input'>>(
 )
 
 TextField.displayName = 'TextField'
+TextField.defaultProps = {
+  variant: 'outlined',
+}

@@ -7,6 +7,7 @@ export const theme = {
   textColor: colors.neutral[600],
   disabled: colors.neutral[400],
   textOnDisabled: colors.neutral[300],
+  formBorderColor: colors.neutral[200],
   status: {
     warningColor: colors.yellow[100],
     warningColorHover: colors.yellow[200],
