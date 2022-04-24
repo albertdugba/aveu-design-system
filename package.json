@@ -1,6 +1,6 @@
 {
   "name": "aveu-design-system",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -27,7 +27,7 @@
   "scripts": {
     "build": "npm run build:js && yarn build:types",
     "build:js": "rollup -c rollup.config.js",
-    "build:types":"tsc -p tsconfig.build.json",
+    "build:types": "tsc -p tsconfig.build.json",
     "start": "react-scripts start",
     "format": "prettier --write .",
     "lint": "eslint --fix",
